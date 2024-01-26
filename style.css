@@ -1,0 +1,144 @@
+*{
+  font-family: 'Text Me One', Arial ;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+body{
+  color: white;
+  background-color: rgb(229, 189, 255);
+  min-height: 100vh; /*Sayfanın kaydırma boyutu*/
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.glass-container{
+  display: block;
+  max-width: 75vw;
+  margin-top: 10vh;
+  background: rgba(0,0,0,0.56);
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.logo{
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.logo-png{
+  height: 80px;
+}
+
+ul.nav-links{
+  margin: 0;
+  float: right;
+  display: flex;
+  list-style: none;
+}
+
+li.nav-links{
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+ul.nav-links:hover{
+ color:rgb(229, 189, 255);
+}
+
+.content{
+  display: flex;
+  width: 100%;
+}
+
+.main{
+  margin-top: 10vh;
+  display: inline-block;
+  padding: 20px;
+}
+
+.main h2 {
+  font-size: 35px;
+}
+
+.main p{
+  font-size: 16px;
+  line-height: 23px;
+}
+
+button{
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  border-color: #6261a5;
+  background-color: #6261a5;
+}
+
+.background-image{
+  display: flex;
+  margin-top: 5vh;
+  position: relative;
+  max-width: 500px;
+}
+
+.background-image img{
+  height: 500px;
+}
+
+.attribute{
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1075px) {
+  .content {
+    flex-direction: column;
+  }
+  .background-image img {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .logo-png{
+    height: 50px;
+  }
+  li.nav-link{
+    font-size: 13px;
+  }
+  .main h2{
+    font-size: 28px;
+  }
+  .main p{
+    font-size: 15px;
+  }
+  button{
+    font-size: 13px;
+  }
+  .background-image img {
+    height: 400px;
+  }
+}
